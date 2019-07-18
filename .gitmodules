@@ -1,0 +1,3 @@
+[submodule "modules/pattern.js"]
+	path = modules/pattern.js
+	url = https://github.com/askbk/pattern.js.git
