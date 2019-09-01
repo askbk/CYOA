@@ -10,17 +10,17 @@ export default class Page {
         `
     }
 
-    toString() {
+    render() {
         return `
             <div
-                style='${this.style}'
-                class='page'>
+                style="${this.style}"
+                class="page">
                 <div>
-                    ${this.situation.toString()}
-                    ${this.choices.toString()}
+                    ${this.situation.render()}
+                    ${this.choices.render()}
                 </div>
                 <div>
-                    <p>Page ${this.pageNumber}</p>
+                    <p style="text-align:center;">Page ${this.pageNumber}</p>
                 </div>
             </div>
         `

@@ -9,15 +9,15 @@ export default class Book {
         `
     }
 
-    toString() {
+    render() {
         return `
-        <div class='book'>
+        <div class="book">
             <div>
                 <h1>${this.title}</h1>
                 <h3>by ${this.author}</h3>
             </div>
             <div>
-                ${this.page.toString()}
+                ${this.page.render()}
             </div>
         </div>
         `

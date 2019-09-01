@@ -8,13 +8,13 @@ export default class Choice {
         `
     }
 
-    toString() {
+    render() {
         return `
         <a
             href='#'
-            data-next='${this.next}'
-            style='${this.style}'
-            class='choice-link'>
+            data-next="${this.next}"
+            style="${this.style}"
+            class="choice-link">
             ${this.text}
         </a>
         `

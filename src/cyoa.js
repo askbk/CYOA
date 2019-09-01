@@ -42,7 +42,7 @@ class CYOA {
 
         this.book.page = this.createPage(pageObject, n)
 
-        this.root.innerHTML = this.book.toString()
+        this.root.innerHTML = this.book.render()
     }
 
     createPage(pageObject, pageNumber) {
@@ -62,6 +62,7 @@ class CYOA {
             ),
             pageNumber
         )
+
         return page
     }
 }

@@ -7,11 +7,11 @@ export default class Paragraph {
         `
     }
 
-    toString() {
+    render() {
         return `
             <p
-                style='${this.style}'
-                class='paragraph-container'>
+                style="${this.style}"
+                class="paragraph-container">
                 ${this.text}
             </p>
         `

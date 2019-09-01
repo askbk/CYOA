@@ -1,17 +1,21 @@
 export default class Choices {
     constructor(choices) {
         this.choices = choices
-        this.style = ``
+        this.style = `
+            display: flex;
+            flex-flow: wrap;
+            padding: 16px
+        `
     }
 
-    toString() {
+    render() {
         return `
         <div
-            style='${this.style}'
-            class='choices-container'>
+            style="${this.style}"
+            class="choices-container">
             ${
                 this.choices.map(c => {
-                    return c.toString()
+                    return c.render()
                 }).join('')
             }
         </div>

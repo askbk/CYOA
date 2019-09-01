@@ -6,14 +6,14 @@ export default class Situation {
         `
     }
 
-    toString() {
+    render() {
         return `
         <div
-            style='${this.style}'
-            class='situation-container'>
+            style="${this.style}"
+            class="situation-container">
             ${
                 this.paragraphs.map(p => {
-                    return p.toString()
+                    return p.render()
                 }).join('')
             }
         </div>
